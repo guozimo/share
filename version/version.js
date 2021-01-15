@@ -2,9 +2,8 @@
 const ora = require("ora"); //主要用来实现node.js命令行环境的loading效果，和显示各种状态的图标等
 const inquirer = require("inquirer");//一个用户与命令行交互的工具
 const formatDate = require("./format");
-// const chalk = require("chalk");
 const fs = require("fs");
-const shell = require("shelljs");//shelljs 模块重新包装了 child_process，调用系统命令更加方便。它需要安装后使用。
+const shell = require("shelljs");//脚本中写 shell 命令
 const curTime = new Date().getTime();
 const defaultVersion = `${formatDate(curTime)}`;
 const promptList = [
